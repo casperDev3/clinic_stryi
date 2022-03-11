@@ -1,0 +1,30 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 16px;
+    background-color: #bffadb;
+    &__logo {
+        height: 76px;
+        text-decoration: none;
+        .img {
+            height: 76px;
+            width: 76px;
+        }
+    }
+    &__logoText {
+        margin-left: 8px;
+        &_regular {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.2;
+            color: #484848;
+            margin-bottom: 6px;           
+        }
+        &_bold {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.2;
+            color: #2b9740;
+            
+        }
+    }
+}

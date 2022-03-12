@@ -20,7 +20,7 @@ $news_title_fontSize: 24px;
             max-width: 100%;
         }
     }
-    &__item{
+    &__item {
         text-decoration: none;
         margin-bottom: 64px;
     }
@@ -43,13 +43,30 @@ $news_title_fontSize: 24px;
         padding-top: 20px;
         max-width: 100%;
         color: #000;
-        &_title{
-            color: #35C493;
+        &_title {
+            color: #35c493;
             margin-bottom: 20px;
         }
     }
-    &__line{
-        border-bottom: 1px solid #FF0000;
+    &__line {
+        border-bottom: 1px solid #ff0000;
         margin-bottom: 48px;
+    }
+    &__btn {
+        margin-bottom: 124px;
+        width: 180px;
+        height: 46px;
+        border: none;
+        background: #e8666d;
+        box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+
+        font-family: "Ubuntu";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-feature-settings: "cpsp" on;
+        color: #ffffff;
     }
 }

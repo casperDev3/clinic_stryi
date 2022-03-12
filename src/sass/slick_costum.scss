@@ -1,35 +1,62 @@
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
-.slick-list {}
-/* Лента слайдов */
-.slick-track{}
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
+/***  WORK PROJECT  ***/
+.slick-list {
+    overflow: hidden;
+}
+.hero__slider {
+    position: relative;
+}
+.hero__slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+}
+.hero__slider .slick-dots li {
+    list-style: none;
+}
+.hero__slider .slick-dots li button {
+    font-size: 0;
+    min-width: 14px;
+    min-height: 14px;
+    border-radius: 50%;
+    border: none;
+    background-color: #32C190;
+    margin-left: 20px;
+}
+.hero__slider .slick-dots li.slick-active button{
+    background-color: #D0D0D0;
+}
+.hero__slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    height: 64px;
+    width: 64px;
+    margin-top: -32px;
+
+    background: rgba($color: #f00, $alpha: 0);
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero__slider .slick-arrow.slick-prev {
+    left: 0;
+    background-image: url(../img/slider_left_arr.svg);
+
+    transition: 0.2s;
+    &:hover{
+        transition: 0.2s;
+        transform: scale(1.2);
+    }
+}
+.hero__slider .slick-arrow.slick-next{
+    right: 0;
+    background-image: url(../img/slider_right_arr.svg);
+
+    transition: 0.2s;
+    &:hover{
+        transition: 0.2s;
+        transform: scale(1.2);
+    }
+}

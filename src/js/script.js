@@ -4,6 +4,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     arrows: false,
-    infinite: true
+    infinite: true,
+    nextArrow: $('.slider-next'),
+    prevArrow: $('.slider-prev')
   });
 });

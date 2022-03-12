@@ -29,10 +29,30 @@
             }
         }
     }
+    &__parent{
+        position: relative;
+    }
     &__slider {
         height: 516px;
         width: 100%;
+        position: relative;
+        &_rightArrow{
+            cursor: pointer;
+            position: absolute;
+            top:44%;
+            left: 0;
+            background-color: #f00;
+        }
+        &_leftArrow{
+            cursor: pointer;
+            background-color: #f00;
+            position: absolute;
+            top:44%;
+            right: 0;
+        }
         &_item {
+            margin-left: 2px;
+            margin-right: 2px;
             display: flex !important;
             flex-direction: column;
             justify-content: end;

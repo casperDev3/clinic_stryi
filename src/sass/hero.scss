@@ -1,4 +1,5 @@
 .hero {
+    margin-bottom: 46px;
     &__actions {
         max-width: 100%;
         background: linear-gradient(151.95deg, #32c190 0%, #4bdcaa 100%);
@@ -35,22 +36,8 @@
     &__slider {
         height: 516px;
         width: 100%;
-       /* position: relative;
-        &_rightArrow{
-            cursor: pointer;
-            position: absolute;
-            top:44%;
-            left: 0;
-            background-color: #f00;
-        }
-        &_leftArrow{
-            cursor: pointer;
-            background-color: #f00;
-            position: absolute;
-            top:44%;
-            right: 0;
-        }*/
         &_item {
+            text-decoration: none;
             margin-left: 2px;
             margin-right: 2px;
             display: flex !important;

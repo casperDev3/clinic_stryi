@@ -1,14 +1,67 @@
 .team {
     background-color: #effff7;
+    margin-bottom: 116px;
     &__title {
         font-family: "Ubuntu";
         font-weight: 700;
         font-size: 64px;
         line-height: 1.2;
-        
+        /* identical to box height */
+
         background: linear-gradient(90deg, #4bdcaa -1.57%, #35c493 101.87%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+
+        padding-top: 64px;
+        margin-bottom: 16px;
+    }
+    &__descp {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+
+        color: #242424;
+        margin-bottom: 22px;
+    }
+    &__btn {
+        min-width: 180px;
+        min-height: 46px;
+        border: none;
+        background: #e8666d;
+        box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+
+        font-family: "Ubuntu";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+        font-feature-settings: "cpsp" on;
+
+        margin-bottom: 210px;
+        color: #ffffff;
+    }
+    &__column {
+        margin-left: 42px;
+        &.first,&.third{
+            transform: translateY(-38px);
+        }
+        &.second{
+            transform: translateY(74px);
+        }
+
+        &_item {
+            width: 126px;
+            height: 126px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+        }
     }
 }

@@ -1,0 +1,14 @@
+.team {
+    background-color: #effff7;
+    &__title {
+        font-family: "Ubuntu";
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.2;
+        
+        background: linear-gradient(90deg, #4bdcaa -1.57%, #35c493 101.87%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}

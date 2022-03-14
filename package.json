@@ -1,5 +1,5 @@
 {
-  "name": "plane",
+  "name": "radio-frankova-zemlya",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -10,11 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
+    "gulp-file-include": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
@@ -29,6 +30,7 @@
   ],
   "dependencies": {
     "animate.css": "^4.1.1",
+    "html-import-partials": "^1.0.1",
     "waypoints": "^4.0.1"
   }
 }

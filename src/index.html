@@ -34,12 +34,16 @@
                     <div class="header__info">
                         <div class="header__contacts d-flex align-items-center justify-content-between">
                             <a href="#" class="d-flex align-items-center">
-                                <img class="address_icon" src="img/location.png">
+                                <svg class="address_icon">
+                                    <use href="#icon-location"></use>
+                                </svg>
                                 <span class="address_text"> 82400, Львівська обл., м. Стрий, вул. Ольги
                                     Басараб, буд. 15</span>
                             </a>
                             <a href="#" class="d-flex align-items-center">
-                                <img class="phone_icon" src="img/phone.png">
+                                <svg class="phone_icon">
+                                    <use href="#icon-phone"></use>
+                                </svg>
                                 <span class="phone_text">(03245) 7-03-02</span>
                             </a>
                         </div>
@@ -75,42 +79,54 @@
                 <div class="col-4">
                     <div class="hero__actions">
                         <a href="#" class="hero__actions_item d-flex align-items-center">
-                            <img class="hero__actions_item-icon align-items-center" src="img/calendar.svg">
+                            <svg class="hero__actions_item-icon align-items-center">
+                                <use href="#icon-calendar"></use>
+                            </svg>
                             <div class="hero__actions_item-text align-items-center">
                                 Запис на прийом
                             </div>
                         </a>
                         <!-- /actions_item -->
                         <a href="#" class="hero__actions_item d-flex align-items-center">
-                            <img class="hero__actions_item-icon align-items-center" src="img/star.svg">
+                            <svg class="hero__actions_item-icon align-items-center">
+                                <use href="#icon-star"></use>
+                            </svg>
                             <div class="hero__actions_item-text align-items-center">
                                 Оцінити якість наданих послуг
                             </div>
                         </a>
                         <!-- /actions_item -->
                         <a href="#" class="hero__actions_item d-flex align-items-center">
-                            <img class="hero__actions_item-icon align-items-center" src="img/tablet.svg">
+                            <svg class="hero__actions_item-icon align-items-center">
+                                <use href="#icon-tablet"></use>
+                            </svg>
                             <div class="hero__actions_item-text align-items-center">
                                 Доступні ліки
                             </div>
                         </a>
                         <!-- /actions_item -->
                         <a href="#" class="hero__actions_item d-flex align-items-center">
-                            <img class="hero__actions_item-icon align-items-center" src="img/auction.svg">
+                            <svg class="hero__actions_item-icon align-items-center">
+                                <use href="#icon-auction"></use>
+                            </svg>
                             <div class="hero__actions_item-text align-items-center">
                                 Публічні закупівлі
                             </div>
                         </a>
                         <!-- /actions_item -->
                         <a href="#" class="hero__actions_item d-flex align-items-center">
-                            <img class="hero__actions_item-icon align-items-center" src="img/pen.svg">
+                            <svg class="hero__actions_item-icon align-items-center">
+                                <use href="#icon-pen"></use>
+                            </svg>
                             <div class="hero__actions_item-text align-items-center">
                                 Декларація з лікарем
                             </div>
                         </a>
                         <!-- /actions_item -->
                         <a href="#" class="hero__actions_item d-flex align-items-center">
-                            <img class="hero__actions_item-icon align-items-center" src="img/schedule.svg">
+                            <svg class="hero__actions_item-icon align-items-center">
+                                <use href="#icon-shedule"></use>
+                            </svg>
                             <div class="hero__actions_item-text align-items-center">
                                 Графік роботи поліклініки
                             </div>
@@ -326,10 +342,14 @@
                         </div>
                         <div class="footer__contacts_icons">
                             <a href="#">
-                                <img src="img/fb.svg">
+                                <svg class="footer__contacts_icons-item">
+                                    <use href="#icon-fb"></use>
+                                </svg>
                             </a>
                             <a href="#" id="telegram">
-                                <img src="img/teleg.svg">
+                                <svg class="footer__contacts_icons-item">
+                                    <use href="#icon-telegram"></use>
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -341,17 +361,17 @@
                 <div class="col-12">
                     <div class="footer__copywr">
                         © 2022 комунального некомерційного підприємства Стрийської міської ради</br>
-                         Використання матеріалів сайту дозволяється лише з посиланням на джерело
+                        Використання матеріалів сайту дозволяється лише з посиланням на джерело
                     </div>
                 </div>
             </div>
     </section>
-
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+    @@include("_icons.html")
 </body>
 
 </html>

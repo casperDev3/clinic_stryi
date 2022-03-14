@@ -37,10 +37,13 @@
     &__slider {
         height: 516px;
         width: 100%;
+        border-radius: 28px;
+        overflow: hidden;
+
         &_item {
             text-decoration: none;
-            margin-left: 2px;
-            margin-right: 2px;
+            /*margin-left: 2px;
+            margin-right: 2px;*/
             display: flex !important;
             flex-direction: column;
             justify-content: end;
@@ -50,7 +53,6 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            border-radius: 28px;
         }
         &_gradient {
             height: 242px;

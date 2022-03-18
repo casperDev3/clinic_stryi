@@ -76,7 +76,7 @@
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 order-2 col-lg-4 order-lg-1">
                     <div class="hero__actions">
                         <a href="#" class="hero__actions_item d-flex align-items-center">
                             <svg class="hero__actions_item-icon align-items-center">
@@ -135,7 +135,7 @@
                     </div>
                     <!-- /actions -->
                 </div>
-                <div class="col-8">
+                <div class="col-12 order-1 col-lg-8 order-lg-2">
                     <div class="hero__parent">
                         <div class="hero__slider">
                             <div class="hero__slider_item" style=" background-image: url(img/slider_bg.jpg);">
@@ -190,14 +190,15 @@
                 <div class="col-12">
                     <div class="news__title d-flex align-items-center">
                         <span>ОСТАННІ НОВИНИ</span>
-                        <img src="img/cardio_line.svg">
+                        <div class="news__cardio" style="background-image:url('img/cardio_line.svg');"></div>
+                        <!-- <img src="img/cardio_line.svg"> -->
                     </div>
                     <!-- /title -->
                 </div>
             </div>
             <!-- /row -->
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <a href="#" class="news__item d-flex">
                         <div class="news__photo" style="background-image: url(img/news1.png);"></div>
                         <div class="news__text">
@@ -211,7 +212,7 @@
                     </a>
                     <!-- /item -->
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <a href="#" class="news__item d-flex">
                         <div class="news__photo" style="background-image: url(img/news2.png);"></div>
                         <div class="news__text">
@@ -238,18 +239,21 @@
     <section class="team">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <div class="team__title">
+                <div class="col-12 col-lg-6">
+                    <div class="team__title d-flex justify-content-center d-lg-block">
                         Колектив
                     </div>
-                    <div class="team__descp">
+                    <div class="team__descp d-flex justify-content-center d-lg-block">
                         Це команда висококваліфікованих професіоналів
                     </div>
-                    <button class="team__btn">До списку лікарів</button>
+                    <div class="d-flex justify-content-center d-lg-block">
+                        <button class="team__btn">До списку лікарів</button>
+                    </div>
+                    
                 </div>
 
-                <div class="col-6">
-                    <div class="d-flex">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex justify-content-center">
                         <div class="team__column first">
                             <div class="team__column_item" style="background-image: url(img/doc1.png);"></div>
                             <div class="team__column_item" style="background-image: url(img/doc4.png);"></div>
@@ -283,9 +287,9 @@
                 </div>
                 <div class="col-12">
                     <div class="partners__logo d-flex justify-content-between">
-                        <img class="partners__logo_item" src="img/eliky.png">
-                        <img class="partners__logo_item" src="img/askep.png">
-                        <img class="partners__logo_item" src="img/natshealth.png">
+                        <img class="partners__logo_item d-none d-md-block" src="img/eliky.png">
+                        <img class="partners__logo_item d-none d-md-block" src="img/askep.png">
+                        <img class="partners__logo_item d-none d-md-block" src="img/natshealth.png">
                         <img class="partners__logo_item" src="img/moz.png">
                         <img class="partners__logo_item" src="img/dept_heath.png">
                     </div>
@@ -297,10 +301,10 @@
     <section class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-lg-4 d-flex justify-content-center d-lg-block">
                     <img src="img/logo_white.svg" class="footer__logo">
                 </div>
-                <div class="col-2">
+                <div class="col-12 col-lg-2 d-flex justify-content-center d-lg-block">
                     <ul class="footer__menu">
                         <li>
                             <a href="#">Підрозділи</a>
@@ -319,8 +323,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-2">
-                    <ul class="footer__menu">
+                <div class="col-12 col-lg-2 d-flex justify-content-center d-lg-block">
+                    <ul class="footer__menu second_column">
                         <li>
                             <a href="#">Публічні закупівлі</a>
                         </li>
@@ -332,7 +336,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
                     <div class="footer__contacts">
                         <div class="footer__contacts_title">
                             Тримайте руку на пульсі

@@ -9,7 +9,54 @@ $height_header: 60px;
     @media screen and (max-width: 992px) {
         padding-bottom: 20px;
     }
+    &__burger {
+        max-height: 40px;
+        min-height: 40px;
+        position: relative;
+        cursor: pointer;
+        & > div {
+            height: 4px;
+            width: 48px;
+            background: #2b9740;
+            position: absolute;
+            left: -40px;
+            transition: 0.3s;
 
+            &:first-child {
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:last-child {
+                top: initial;
+                bottom: 0;
+            }
+        }
+        &.toggled {
+            & > div {
+                left: -40px;
+                transition: 0.3s;
+
+                &:first-child {
+                    top: 50%;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:last-child {
+                    top: 50%;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
     &__info {
         @media screen and (max-width: 992px) {
             position: absolute;
@@ -18,11 +65,18 @@ $height_header: 60px;
 
             padding: 0;
             margin-top: $height_header + 40px;
-            background-color: #BFFADB;
+            background-color: #bffadb;
             max-width: 100vw;
             min-width: 100vw;
             min-height: 100vh;
             z-index: 20;
+            transform: translateX(100%);
+            transition: 0.3s;
+
+            &.toggled{
+                transition: 0.3s;
+                transform: translateX(0);
+            }
         }
     }
     &__logo {
@@ -61,14 +115,14 @@ $height_header: 60px;
         ul {
             flex-wrap: wrap;
             align-content: flex-end;
-            @media screen and (max-width: 992px){
+            @media screen and (max-width: 992px) {
                 text-align: center;
                 margin-top: 50px;
             }
 
             li {
                 list-style: none;
-                @media screen and (max-width: 992px){
+                @media screen and (max-width: 992px) {
                     margin-bottom: 40px;
                 }
                 a {
@@ -120,7 +174,7 @@ $height_header: 60px;
             line-height: 1.2;
             color: #2b9740;
         }
-       /* @media screen and (max-width: 992px) {
+        /* @media screen and (max-width: 992px) {
             position: absolute;
             top: 380px;
         }*/

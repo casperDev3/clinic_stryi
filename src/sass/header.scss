@@ -10,7 +10,7 @@ $height_header: 60px;
         padding-bottom: 20px;
     }
     &__burger {
-        max-height: 40px;
+        min-width: 40px;
         min-height: 40px;
         position: relative;
         cursor: pointer;
@@ -22,7 +22,7 @@ $height_header: 60px;
             width: 48px;
             background: #2b9740;
             position: absolute;
-            left: -40px;
+            left: 40;
             transition: 0.3s;
 
             &:first-child {
@@ -41,7 +41,6 @@ $height_header: 60px;
         }
         &.toggled {
             & > div {
-                left: -40px;
                 transition: 0.3s;
 
                 &:first-child {
@@ -62,7 +61,7 @@ $height_header: 60px;
     }
     &__info {
         @media screen and (max-width: 992px) {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
 

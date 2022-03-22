@@ -20,11 +20,11 @@
     min-height: 14px;
     border-radius: 50%;
     border: none;
-    background-color: #32C190;
+    background-color: #32c190;
     margin-left: 20px;
 }
-.hero__slider .slick-dots li.slick-active button{
-    background-color: #D0D0D0;
+.hero__slider .slick-dots li.slick-active button {
+    background-color: #d0d0d0;
 }
 .hero__slider .slick-arrow {
     position: absolute;
@@ -45,18 +45,37 @@
     background-image: url(../img/slider_left_arr.svg);
 
     transition: 0.2s;
-    &:hover{
+    &:hover {
         transition: 0.2s;
         transform: scale(1.2);
     }
 }
-.hero__slider .slick-arrow.slick-next{
+.hero__slider .slick-arrow.slick-next {
     right: 0;
     background-image: url(../img/slider_right_arr.svg);
 
     transition: 0.2s;
-    &:hover{
+    &:hover {
         transition: 0.2s;
         transform: scale(1.2);
     }
+}
+
+.team__slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+}
+.team__slider .slick-dots li {
+    list-style: none;
+}
+.team__slider .slick-dots li button {
+    font-size: 0;
+    min-width: 14px;
+    min-height: 14px;
+    border-radius: 50%;
+    border: none;
+    background-color: #da104c;
+    margin-left: 20px;
 }

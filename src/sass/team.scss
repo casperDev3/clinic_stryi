@@ -1,6 +1,19 @@
 .team {
     background-color: #effff7;
     margin-bottom: 116px;
+    &__img_slider{
+        height: 280px;
+        min-width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 18px;
+    }
+    .team__slider_item{
+        margin-left: 6px;
+        margin-right: 6px;
+       
+    }
     &__title {
         font-family: "Ubuntu";
         font-weight: 700;

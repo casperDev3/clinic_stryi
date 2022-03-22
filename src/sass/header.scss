@@ -71,9 +71,11 @@ $height_header: 60px;
             min-height: 100vh;
             z-index: 20;
             transform: translateX(100%);
+            display: none;
             transition: 0.3s;
 
             &.toggled{
+                display: block;
                 transition: 0.3s;
                 transform: translateX(0);
             }
@@ -145,6 +147,12 @@ $height_header: 60px;
     }
     &__contacts {
         margin-bottom: 36px;
+        @media  screen and (max-width: 992px) {
+            margin-top: 70px;
+            .link{
+                padding-top: 10px;
+            }
+        }
         a {
             text-decoration: none;
         }

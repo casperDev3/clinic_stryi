@@ -42,26 +42,25 @@
 
                 <div class="col-12 col-lg-8">
                     <div class="header__info">
-                        <div class="order-2 order-lg-1">
-                            <div class="header__contacts d-lg-flex align-items-lg-center justify-content-lg-between">
-                                <a href="#" class="d-flex align-items-center">
-                                    <svg class="address_icon">
-                                        <use href="#icon-location"></use>
-                                    </svg>
-                                    <span class="address_text"> 82400, Львівська обл., м. Стрий, вул. Ольги
-                                        Басараб, буд. 15</span>
-                                </a>
-                                <a href="#" class="d-flex align-items-center">
-                                    <svg class="phone_icon">
-                                        <use href="#icon-phone"></use>
-                                    </svg>
-                                    <span class="phone_text">(03245) 7-03-02</span>
-                                </a>
-                            </div>
+
+                        <div class="d-none header__contacts d-lg-flex align-items-lg-center justify-content-lg-between">
+                            <a href="#" class="d-flex align-items-center">
+                                <svg class="address_icon">
+                                    <use href="#icon-location"></use>
+                                </svg>
+                                <span class="address_text"> 82400, Львівська обл., м. Стрий, вул. Ольги
+                                    Басараб, буд. 15</span>
+                            </a>
+                            <a href="#" class="d-flex align-items-center">
+                                <svg class="phone_icon">
+                                    <use href="#icon-phone"></use>
+                                </svg>
+                                <span class="phone_text">(03245) 7-03-02</span>
+                            </a>
                         </div>
 
                         <!-- /contacts -->
-                        <div class="header__menu d-lg-flex justify-content-lg-end">
+                        <div class="col-12 order-1 order-lg-2 header__menu d-lg-flex justify-content-lg-end">
                             <ul class="d-lg-flex">
                                 <li>
                                     <a href="#">Реєстратура</a>
@@ -79,6 +78,25 @@
                                     <a href="#">Зворотній зв'язок</a>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div
+                            class="header__contacts d-flex align-items-center justify-content-center flex-column d-lg-none ">
+                            <a href="#" class="d-flex align-items-center">
+                                <svg class="phone_icon">
+                                    <use href="#icon-phone"></use>
+                                </svg>
+                                <span class="phone_text">(03245) 7-03-02</span>
+                            </a>
+
+                            <a href="#" class="link d-flex align-items-center">
+                                <svg class="address_icon">
+                                    <use href="#icon-location"></use>
+                                </svg>
+                                <span class="address_text"> 82400, Львівська обл., м. Стрий, вул. Ольги
+                                    Басараб, буд. 15</span>
+                            </a>
+
                         </div>
                     </div>
                     <!-- /info -->
@@ -212,7 +230,7 @@
             <!-- /row -->
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <a href="#" class="news__item d-flex">
+                    <a href="#" class="news__item d-block d-sm-flex">
                         <div class="news__photo" style="background-image: url(img/news1.png);"></div>
                         <div class="news__text">
                             <div class="news__text_title">
@@ -226,7 +244,7 @@
                     <!-- /item -->
                 </div>
                 <div class="col-12 col-lg-6">
-                    <a href="#" class="news__item d-flex">
+                    <a href="#" class="news__item d-block d-sm-flex">
                         <div class="news__photo" style="background-image: url(img/news2.png);"></div>
                         <div class="news__text">
                             <div class="news__text_title">
@@ -288,11 +306,23 @@
                     </div>
                     <!-- /columns photo -->
                 </div>
+                <div class="col-12 d-sm-none">
+
+                    <div class="team__slider">
+                        <div class="team__slider_item"><div class="team__img_slider style="background-image: url(img/doc1.png);"></div></div>
+                        <div class="team__slider_item"><div class="team__img_slider style="background-image: url(img/doc2.png);"></div></div>
+                        <div class="team__slider_item"><div class="team__img_slider style="background-image: url(img/doc3.png);"></div></div>
+                        <div class="team__slider_item"><div class="team__img_slider style="background-image: url(img/doc4.png);"></div></div>
+                        <div class="team__slider_item"><div class="team__img_slider style="background-image: url(img/doc5.png);"></div></div>
+                    </div>
+                    <!-- /column -->
+
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="partners">
+    <section class="d-none d-lg-block partners">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -300,11 +330,30 @@
                 </div>
                 <div class="col-12">
                     <div class="partners__logo d-flex justify-content-between">
-                        <img class="partners__logo_item d-none d-md-block" src="img/eliky.png">
-                        <img class="partners__logo_item d-none d-md-block" src="img/askep.png">
-                        <img class="partners__logo_item d-none d-md-block" src="img/natshealth.png">
+                        <img class="partners__logo_item" src="img/eliky.png">
+                        <img class="partners__logo_item" src="img/askep.png">
+                        <img class="partners__logo_item" src="img/natshealth.png">
                         <img class="partners__logo_item" src="img/moz.png">
                         <img class="partners__logo_item" src="img/dept_heath.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-block d-lg-none partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="partners__title">В ПАРНЕРСТВІ З</div>
+                </div>
+                <div class="col-12">
+                    <div class="partners__slider d-flex justify-content-between">
+                        <div><img class="partners__logo_slider" src="img/eliky.png"></div>
+                        <div><img class="partners__logo_slider" src="img/askep.png"></div>
+                        <div><img class="partners__logo_slider" src="img/natshealth.png"></div>
+                        <div><img class="partners__logo_slider" src="img/moz.png"></div>
+                        <div><img class="partners__logo_slider" src="img/dept_heath.png"></div>
                     </div>
                 </div>
             </div>

@@ -38,6 +38,9 @@ $news_title_fontSize: 24px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        @media  screen and (max-width: 575px){
+            min-height: 300px;
+        }
     }
     &__text {
         margin-left: 36px;

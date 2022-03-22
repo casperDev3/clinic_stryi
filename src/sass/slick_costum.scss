@@ -6,7 +6,7 @@
     position: relative;
 }
 .hero__slider .slick-dots {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     padding-top: 24px;
@@ -15,16 +15,17 @@
     list-style: none;
 }
 .hero__slider .slick-dots li button {
+    display: block !important;
     font-size: 0;
     min-width: 14px;
     min-height: 14px;
     border-radius: 50%;
     border: none;
-    background-color: #32c190;
+    background-color: #32c190 !important;
     margin-left: 20px;
 }
 .hero__slider .slick-dots li.slick-active button {
-    background-color: #d0d0d0;
+    background-color: #d0d0d0 !important;
 }
 .hero__slider .slick-arrow {
     position: absolute;
@@ -66,6 +67,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 24px;
+    padding-bottom: 30px;
 }
 .team__slider .slick-dots li {
     list-style: none;
@@ -78,4 +80,7 @@
     border: none;
     background-color: #da104c;
     margin-left: 20px;
+}
+.team__slider .slick-dots li.slick-active button {
+    background-color: #d0d0d0;
 }

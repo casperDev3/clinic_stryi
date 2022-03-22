@@ -1,9 +1,12 @@
 .team {
     background-color: #effff7;
     margin-bottom: 116px;
+    @media  screen and (max-width: 575px){
+        margin-bottom: 60px;
+    }
     &__img_slider{
         height: 280px;
-        min-width: 100%;
+        min-width: 300px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -64,6 +67,9 @@
         color: #ffffff;
         @media  screen and (max-width: 992px){
             margin-bottom: 90px;
+        }
+        @media  screen and (max-width: 575px){
+            margin-bottom: 60px;
         }
     }
     &__column {

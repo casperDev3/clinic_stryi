@@ -2,8 +2,8 @@ let slider = $(document).ready(function () {
   $('.hero__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: true,
     arrows: true,
+    dots: true,
     infinite: true
   });
 });
@@ -32,7 +32,6 @@ let slider_team = $(document).ready(function () {
     centerMode: true,
     arrows: false,
     variableWidth: true,
-    focusOnSelect: true,
     infinite: true
   });
 });

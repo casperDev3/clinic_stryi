@@ -27,6 +27,11 @@
 .hero__slider .slick-dots li.slick-active button {
     background-color: #d0d0d0 !important;
 }
+
+.hero__slider .slick-list .draggable{
+    border-radius: 12px;
+    overflow: hidden;
+}
 .hero__slider .slick-arrow {
     position: absolute;
     top: 50%;
@@ -78,7 +83,7 @@
     min-height: 14px;
     border-radius: 50%;
     border: none;
-    background-color: #da104c;
+    background-color: #32c190 !important;
     margin-left: 20px;
 }
 .team__slider .slick-dots li.slick-active button {
@@ -86,5 +91,5 @@
 }
 
 .hero__slider .slick-dots li button {
-    background-color: #f00 !important;
+    background-color: #32c190 !important;
 }

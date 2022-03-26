@@ -1,5 +1,8 @@
 .hero {
     margin-bottom: 46px;
+    @media screen and (max-width: 992px) {
+        margin-top: 120px;
+    }
     &__actions {
         max-width: 100%;
         background: linear-gradient(151.95deg, #32c190 0%, #4bdcaa 100%);

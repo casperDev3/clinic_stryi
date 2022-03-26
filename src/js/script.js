@@ -56,6 +56,26 @@ let body = document.querySelector('body');
 
 if(isMobile.any()){
   body.classList.add('touch');
+  $('.first_level_1').click(function(){
+    $('.sub_menu_1').toggleClass('active');
+  });
+
+  $('.first_level_2').click(function(){
+    $('.sub_menu_2').toggleClass('active');
+  });
+
+  $('.first_level_3').click(function(){
+    $('.sub_menu_3').toggleClass('active');
+  });
+
+  $('.first_level_4').click(function(){
+    $('.sub_menu_4').toggleClass('active');
+  });
+
+  $('.first_level_5').click(function(){
+    $('.sub_menu_5').toggleClass('active');
+  });
+  
 }else{
   body.classList.add('mouse');
 }

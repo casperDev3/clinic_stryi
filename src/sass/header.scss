@@ -8,6 +8,11 @@ $height_header: 60px;
     position: relative;
     @media screen and (max-width: 992px) {
         padding-bottom: 20px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 100;
     }
     &__burger {
         min-width: 40px;
@@ -197,19 +202,19 @@ $height_header: 60px;
 //Dropdown menu
 body.mouse .header {
     &__main_menu {
-        > li {
+        li {
             position: relative;
             cursor: pointer;
             &:hover {
-                > a {
+                a {
                     background: rgb(75, 220, 170);
                     color: #fff;
                 }
-                > ul.sub_menu {
+                ul.sub_menu_1 {
                     display: block;
                 }
             }
-            > ul.sub_menu {
+            ul.sub_menu_1 {
                 display: none;
                 padding-top: 4px;
                 position: absolute;
@@ -231,5 +236,216 @@ body.mouse .header {
                 }
             }
         }
+        //////////////////
+        li {
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                a {
+                    background: rgb(75, 220, 170);
+                    color: #fff;
+                }
+                ul.sub_menu_2 {
+                    display: block;
+                }
+            }
+            ul.sub_menu_2 {
+                display: none;
+                padding-top: 4px;
+                position: absolute;
+                top: 22px;
+                left: 0;
+                z-index: 100;
+
+                li {
+                    list-style: none;
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: #fff;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: rgb(75, 220, 170);
+                    }
+                }
+            }
+        }
+        //////////////////
+        li {
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                 a {
+                    background: rgb(75, 220, 170);
+                    color: #fff;
+                }
+                 ul.sub_menu_3 {
+                    display: block;
+                }
+            }
+            ul.sub_menu_3 {
+                display: none;
+                padding-top: 4px;
+                position: absolute;
+                top: 22px;
+                left: 0;
+                z-index: 100;
+
+                li {
+                    list-style: none;
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: #fff;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: rgb(75, 220, 170);
+                    }
+                }
+            }
+        }
+        //////////////////
+        li {
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                 a {
+                    background: rgb(75, 220, 170);
+                    color: #fff;
+                }
+                 ul.sub_menu_4 {
+                    display: block;
+                }
+            }
+            ul.sub_menu_4 {
+                display: none;
+                padding-top: 4px;
+                position: absolute;
+                top: 22px;
+                left: 0;
+                z-index: 100;
+
+                li {
+                    list-style: none;
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: #fff;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: rgb(75, 220, 170);
+                    }
+                }
+            }
+        }
+        //////////////////
+        li {
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                 a {
+                    background: rgb(75, 220, 170);
+                    color: #fff;
+                }
+                 ul.sub_menu_5 {
+                    display: block;
+                }
+            }
+            ul.sub_menu_5 {
+                display: none;
+                padding-top: 4px;
+                position: absolute;
+                top: 22px;
+                left: 0;
+                z-index: 100;
+
+                li {
+                    list-style: none;
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: #fff;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: rgb(75, 220, 170);
+                    }
+                }
+            }
+        }
+        //////////////////
+    }
+}
+
+body.touch .header {
+    &__main_menu {
+        .sub_menu_1 {
+            display: none;
+            a {
+                text-decoration: none;
+                display: block;
+                margin-top: 10px;
+                color: #f00;
+            }
+        }
+        .sub_menu_1.active {
+            display: block;
+        }
+        ////////////////////////////////////////
+        .sub_menu_2 {
+            display: none;
+            a {
+                text-decoration: none;
+                display: block;
+                margin-top: 10px;
+                color: #f00;
+            }
+        }
+        .sub_menu_2.active {
+            display: block;
+        }
+        //////////////////////////////////////
+        .sub_menu_3 {
+            display: none;
+            a {
+                text-decoration: none;
+                display: block;
+                margin-top: 10px;
+                color: #f00;
+            }
+        }
+        .sub_menu_3.active {
+            display: block;
+        }
+        //////////////////////////////////////
+        .sub_menu_4 {
+            display: none;
+            a {
+                text-decoration: none;
+                display: block;
+                margin-top: 10px;
+                color: #f00;
+            }
+        }
+        .sub_menu_4.active {
+            display: block;
+        }
+        //////////////////////////////////////
+        .sub_menu_5 {
+            display: none;
+            a {
+                text-decoration: none;
+                display: block;
+                margin-top: 10px;
+                color: #f00;
+            }
+        }
+        .sub_menu_5.active {
+            display: block;
+        }
+        //////////////////////////////////////
     }
 }

@@ -14,7 +14,7 @@ $height_header: 60px;
         min-height: 40px;
         position: relative;
         cursor: pointer;
-        @media  screen and (max-width: 575px){
+        @media screen and (max-width: 575px) {
             margin-right: 20px;
         }
         & > div {
@@ -75,7 +75,7 @@ $height_header: 60px;
             transform: translateX(100%);
             transition: 0.3s;
 
-            &.toggled{
+            &.toggled {
                 display: block;
                 transition: 0.3s;
                 transform: translateX(0);
@@ -115,27 +115,31 @@ $height_header: 60px;
     }
     &__menu {
         position: relative;
-        ul {
+        > ul {
             flex-wrap: wrap;
             align-content: flex-end;
             @media screen and (max-width: 992px) {
                 text-align: center;
-                margin-top: 50px;
+                margin-top: 40px;
             }
 
-            li {
+            > li {
                 list-style: none;
                 @media screen and (max-width: 992px) {
                     margin-bottom: 40px;
                 }
-                a {
+                > a {
                     font-family: "Ubuntu";
+                    padding-bottom: 10px;
                     font-weight: 700;
                     font-size: 14px;
                     line-height: 1.2;
-                    margin-left: 30px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    padding-top: 10px;
                     text-decoration: none;
                     color: #000;
+
                     @media screen and (max-width: 992px) {
                         margin: 0;
                         text-align: center;
@@ -148,9 +152,9 @@ $height_header: 60px;
     }
     &__contacts {
         margin-bottom: 36px;
-        @media  screen and (max-width: 992px) {
+        @media screen and (max-width: 992px) {
             margin-top: 70px;
-            .link{
+            .link {
                 padding-top: 10px;
             }
         }
@@ -187,5 +191,45 @@ $height_header: 60px;
             position: absolute;
             top: 380px;
         }*/
+    }
+}
+
+//Dropdown menu
+.header {
+    &__main_menu {
+        > li {
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                > a {
+                    background: rgb(75, 220, 170);
+                    color: #fff;
+                }
+                > ul.sub_menu {
+                    display: block;
+                }
+            }
+            > ul.sub_menu {
+                display: none;
+                padding-top: 4px;
+                position: absolute;
+                top: 22px;
+                left: 0;
+                z-index: 100;
+
+                li {
+                    list-style: none;
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: #fff;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: rgb(75, 220, 170);
+                    }
+                }
+            }
+        }
     }
 }

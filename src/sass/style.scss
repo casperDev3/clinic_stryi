@@ -1,3 +1,8 @@
+body {
+    overflow-x: hidden !important;
+    font-family: 'Roboto';    
+}
+
 
 @import "base/func";
 @import "fonts/font";
@@ -12,6 +17,3 @@
 @import"partners.scss";
 @import"footer.scss";
 
-body {
-    font-family: 'Roboto';
-}

@@ -1,6 +1,22 @@
 .team {
     background-color: #effff7;
     margin-bottom: 116px;
+    @media  screen and (max-width: 575px){
+        margin-bottom: 60px;
+    }
+    &__img_slider{
+        height: 280px;
+        min-width: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 18px;
+    }
+    .team__slider_item{
+        margin-left: 6px;
+        margin-right: 6px;
+       
+    }
     &__title {
         font-family: "Ubuntu";
         font-weight: 700;
@@ -15,6 +31,10 @@
 
         padding-top: 64px;
         margin-bottom: 16px;
+        @media  screen and (max-width: 992px){
+            padding-top: 36px;
+            
+        }
     }
     &__descp {
         font-weight: 400;
@@ -23,6 +43,9 @@
 
         color: #242424;
         margin-bottom: 22px;
+        @media  screen and (max-width: 992px){
+            text-align: center;
+        }
     }
     &__btn {
         min-width: 180px;
@@ -42,9 +65,19 @@
 
         margin-bottom: 210px;
         color: #ffffff;
+        @media  screen and (max-width: 992px){
+            margin-bottom: 90px;
+        }
+        @media  screen and (max-width: 575px){
+            margin-bottom: 60px;
+        }
     }
     &__column {
         margin-left: 42px;
+        @media  screen and (max-width: 992px){
+            margin-left: 32px;
+            
+        }
         &.first,&.third{
             transform: translateY(-38px);
         }

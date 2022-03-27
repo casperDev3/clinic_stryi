@@ -1,5 +1,8 @@
 .hero {
     margin-bottom: 46px;
+    @media screen and (max-width: 992px) {
+        margin-top: 120px;
+    }
     &__actions {
         max-width: 100%;
         background: linear-gradient(151.95deg, #32c190 0%, #4bdcaa 100%);
@@ -9,6 +12,7 @@
             text-decoration: none;
             height: 86px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.29);
+            
             &-icon {
                 height: 32px;
                 width: 32px;
@@ -33,17 +37,17 @@
     }
     &__parent{
         position: relative;
+        
     }
     &__slider {
         height: 516px;
         width: 100%;
         border-radius: 28px;
-        overflow: hidden;
-
+        @media  screen and (max-width: 575px){
+            height: 300px;
+        }
         &_item {
             text-decoration: none;
-            /*margin-left: 2px;
-            margin-right: 2px;*/
             display: flex !important;
             flex-direction: column;
             justify-content: end;
@@ -53,12 +57,18 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            @media  screen and (max-width: 575px){
+                height: 300px;
+            }
         }
         &_gradient {
             height: 242px;
             width: 100%;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
             border-radius: 0 0 28px 28px;
+            @media  screen and (max-width: 575px){
+                height: 140px;
+            }
             &-date {
                 padding-top: 90px;
                 margin-left: 38px;
@@ -67,6 +77,10 @@
                 font-size: 18px;
                 line-height: 1.2;
                 color: #44ff9d;
+                @media  screen and (max-width: 575px){
+                    padding-top: 40px;
+                    font-size: 16px;
+                }
             }
             &-title {
                 margin-left: 38px;
@@ -74,7 +88,14 @@
                 font-size: 32px;
                 line-height: 1.2;
                 color: #ffffff;
+                @media  screen and (max-width: 575px){
+                    font-size: 20px;
+                }
             }
+        }
+        @media  screen and (max-width: 992px){
+            margin-bottom: 56px;
+            
         }
     }
 }

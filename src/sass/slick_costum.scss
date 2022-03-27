@@ -1,6 +1,7 @@
 /***  WORK PROJECT  ***/
-.slick-list {
+.hero .slick-list {
     overflow: hidden;
+    border-radius: 28px;
 }
 .hero__slider {
     position: relative;
@@ -83,11 +84,11 @@
     min-height: 14px;
     border-radius: 50%;
     border: none;
-    background-color: #32c190 !important;
+    background-color: #e8666d !important;
     margin-left: 20px;
 }
 .team__slider .slick-dots li.slick-active button {
-    background-color: #d0d0d0;
+    background-color: #d0d0d0 !important;
 }
 
 .hero__slider .slick-dots li button {

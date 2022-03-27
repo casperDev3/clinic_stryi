@@ -43,14 +43,11 @@
         height: 516px;
         width: 100%;
         border-radius: 28px;
-        /*overflow: hidden;*/
         @media  screen and (max-width: 575px){
             height: 300px;
         }
         &_item {
             text-decoration: none;
-            /*margin-left: 2px;
-            margin-right: 2px;*/
             display: flex !important;
             flex-direction: column;
             justify-content: end;
@@ -97,7 +94,7 @@
             }
         }
         @media  screen and (max-width: 992px){
-            margin-bottom: 36px;
+            margin-bottom: 56px;
             
         }
     }

@@ -39,43 +39,31 @@ let slider_team = $(document).ready(function () {
 
 $(document).ready(function () {
   $('.header__burger').click(function (event) {
-    $('.header__burger, .header__info').toggleClass('toggled');
+    $('.header__burger, .dropdown_menu, .header').toggleClass('toggled');
   });
 });
 
-let isMobile = {
-  Android: function () { return navigator.userAgent.match(/Android/i); },
-  BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); },
-  iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
-  Opera: function () { return navigator.userAgent.match(/Opera Mini/i); },
-  Windows: function () { return navigator.userAgent.match(/IEMobile/i); },
-  any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); }
-};
 
-let body = document.querySelector('body');
-
-if(isMobile.any()){
-  body.classList.add('touch');
-  $('.first_level_1').click(function(){
-    $('.sub_menu_1').toggleClass('active');
+if ($(window).width() < 998) {
+  $('.first_level_1').click(function () {
+    $('.sub1').toggleClass('clicked');
   });
-
-  $('.first_level_2').click(function(){
-    $('.sub_menu_2').toggleClass('active');
+  $('.first_level_2').click(function () {
+    $('.sub2').toggleClass('clicked');
   });
-
-  $('.first_level_3').click(function(){
-    $('.sub_menu_3').toggleClass('active');
+  $('.first_level_3').click(function () {
+    $('.sub3').toggleClass('clicked');
   });
-
-  $('.first_level_4').click(function(){
-    $('.sub_menu_4').toggleClass('active');
+  $('.first_level_4').click(function () {
+    $('.sub4').toggleClass('clicked');
   });
-
-  $('.first_level_5').click(function(){
-    $('.sub_menu_5').toggleClass('active');
+  $('.first_level_5').click(function () {
+    $('.sub5').toggleClass('clicked');
   });
-  
-}else{
-  body.classList.add('mouse');
+  $('.first_level_6').click(function () {
+    $('.sub6').toggleClass('clicked');
+  });
 }
+
+
+

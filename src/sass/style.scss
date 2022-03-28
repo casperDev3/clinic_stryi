@@ -1,19 +1,19 @@
 body {
-    overflow-x: hidden !important;
-    font-family: 'Roboto';    
+  overflow-x: hidden !important;
+  font-family: "Roboto";
 }
-
 
 @import "base/func";
 @import "fonts/font";
 
-@import"reset_style.scss";
-@import"slick_costum.scss";
+@import "reset_style.scss";
+@import "slick_costum.scss";
 
 @import "header.scss";
-@import"hero.scss";
-@import"news.scss";
-@import"team.scss";
-@import"partners.scss";
-@import"footer.scss";
-
+@import "hero.scss";
+@import "news.scss";
+@import "team.scss";
+@import "partners.scss";
+@import "footer.scss";
+@import "doctor.scss";
+@import "doctor-card.scss";

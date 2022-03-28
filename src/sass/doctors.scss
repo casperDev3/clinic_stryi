@@ -1,0 +1,125 @@
+.doctors {
+  margin: 20px;
+
+  &__title {
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__input-1 {
+    width: 280px;
+    height: 47px;
+    max-width: 100%;
+    background: #ededed;
+    border-radius: 4px;
+    border: none;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: #878787;
+    background-image: url("../img/OK.svg");
+
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    padding-left: 20px;
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+    @media (max-width: 990px) {
+      font-size: 14px;
+    }
+  }
+
+  &__input-2 {
+    width: 880px;
+    height: 47px;
+    max-width: 100%;
+    background: #ededed;
+    border-radius: 4px;
+    border: none;
+    background-image: url("../img/LUPA.svg");
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    padding-left: 50px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    @media (max-width: 990px) {
+      font-size: 14px;
+    }
+  }
+  &__radio {
+    margin-bottom: 20px;
+    input {
+      display: none;
+    }
+    .dum {
+      cursor: pointer;
+      margin: 20px 10px 0 10px;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      background: white;
+      border-radius: 50%;
+      border: 2px solid #32c190;
+    }
+    .itt {
+      margin-right: 10px;
+      position: relative;
+      top: -5px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    input:checked + span {
+      background: #32c190;
+      box-shadow: inset 0px 0px 0px 3px white;
+    }
+  }
+
+  &__radio-2 {
+    margin-left: 20px;
+  }
+}
+label {
+  align-items: center;
+  margin-bottom: 30px;
+
+  input {
+    display: none;
+  }
+  .dummy {
+    margin-left: 5px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #32c190;
+    margin-left: 20px;
+  }
+  span {
+    margin-left: 5px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  input:checked + span {
+    background: #32c190;
+    box-shadow: inset 0px 0px 0px 3px #fff;
+  }
+}

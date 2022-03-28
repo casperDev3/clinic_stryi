@@ -1,5 +1,10 @@
 .doc-one {
   margin: 30px 0;
+  &__all {
+    @media (max-width: 990px) {
+      flex-direction: column;
+    }
+  }
 
   &__photo {
     height: 370px;
@@ -8,10 +13,16 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 12px;
+    @media (max-width: 990px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__info {
     margin-left: 40px;
+    @media (max-width: 990px) {
+      margin-left: 0px;
+    }
   }
 
   &__name {
@@ -47,6 +58,9 @@
       font-weight: 400;
       line-height: 18px;
     }
+    p {
+      margin-bottom: 10px;
+    }
     button {
       margin-top: 40px;
       color: white;
@@ -61,6 +75,11 @@
       font-style: normal;
       font-weight: 700;
       line-height: 16px;
+    }
+    .bb {
+      @media (max-width: 990px) {
+        text-align: center;
+      }
     }
   }
   &__title {

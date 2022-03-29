@@ -315,7 +315,7 @@ $height_header: 60px;
         }
     }
     @media screen and (max-width: 998px) {
-        min-height: 100vh;
+        height: 100vh;
         position: fixed;
         top: 90px;
         right: 0;
@@ -325,6 +325,7 @@ $height_header: 60px;
         overflow-y: scroll;
         transform: translateX(100%);
         transition: 0.3s;
+        padding-bottom: 120px;
 
         &.toggled {
             transition: 0.3s;

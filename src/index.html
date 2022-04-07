@@ -527,28 +527,29 @@
               <div class="doctors__title">Наші лікарі</div>
             </div>
         
-            <div class="col-12 col-lg-3">
+            <div id="filters" class="col-12 col-lg-3">
         
-              <select class="doctors__input-1"  name="type">
-                <option  value="doc1">Оберіть відділення</option>
-                <option  value="doc2">Оберіть відділення</option>
+              <select id="filter-department" class="doctors__input-1"  name="type">
+                <option  value="-1">Оберіть відділення</option>
+                <option  value="0">Хірургія</option>
+                <option  value="1">Травматологоія</option>
                 
             </select>
             </div>
         
             <div class="col-12 col-lg-9 text-end">
-              <input class="doctors__input-2" placeholder="Пошук за іменем, прізвищем чи спеціальністю" type="text">
+              <input id="filter-query" class="doctors__input-2" placeholder="Пошук за іменем, прізвищем чи спеціальністю" type="text">
             </div>
         
-            <div class="col-12 d-flex  justify-content-end ">
+            <div id="filter-declaration" class="col-12 d-flex  justify-content-end ">
               <label class="d-flex  ">
-                <input type="radio" value="one" name="one">
+                <input type="radio" value="false" checked name="declaration">
                 <span class="dummy"></span>
                 <span>Всі</span>
               </label>
               
               <label class="d-flex  ">
-                <input type="radio" value="two" name="one">
+                <input type="radio" value="true" name="declaration">
                 <span class="dummy"></span>
                 <span>Укласти декларацію</span>
               </label>
@@ -680,6 +681,9 @@
                     </div>  
                   </a>       
             </div> 
+            </div>
+            <div id="doctors" class="row">
+
             </div>
           </div>
         </div>

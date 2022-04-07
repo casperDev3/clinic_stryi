@@ -65,5 +65,108 @@ if ($(window).width() < 998) {
   });
 }
 
+// доктор фільтр
+let all_doctors = [
+  {
+    name: "Іван Франко",
+    department: 0,
+    department_name: "Хірургія",
+    photo_url:
+      "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg",
+    declaration: true
+  },
+  
+  {
+    name: "Тарас Шевчеенко",
+    department: 1,
+    department_name: "Травматологоія",
+    photo_url:
+      "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg",
+    declaration: false
+  }
+];
+
+let filter = {
+  department: null,
+  can_declarate: false,
+  query: ""
+};
+filterDoctors();
+// 1 фільтруємо відділення
+$("#filter-department").on("change", function () {
+  filter.department = Number($(this).val());
+  filterDoctors();
+});
+
+// 2 фільтруємо декларування
+$("#filter-declaration input").on("change", function () {
+  filter.can_declarate = $(this).val();
+  console.log(JSON.stringify(filter));
+  filterDoctors();
+});
+
+$("#filter-query").on("keyup", function () {
+  filter.query = $(this).val().toLowerCase();
+  filterDoctors();
+});
+
+function filterDoctors() {
+  let filtered_doctors = [];
+  let all_html = "";
+  //Відсіюємо по відділенню
+  if (filter.department >= 0) {
+    filtered_doctors = all_doctors.filter((el) => {
+      return el.department == filter.department;
+    });
+  } else {
+    filtered_doctors = all_doctors;
+  }
+
+  console.log(filtered_doctors);
+
+  //Відсіюємо по декларації
+  if (filter.can_declarate == "true") {
+    filtered_doctors = filtered_doctors.filter((el) => {
+      return el.declaration == true;
+    });
+  } else {
+    filtered_doctors = filtered_doctors.filter((el) => {
+      return el.declaration == true || el.declaration == false;
+    });
+  }
+
+  //Відсіюємо по запиту
+
+  if (filter.query.length > 2) {
+    filtered_doctors = filtered_doctors.filter((el) => {
+      return el.name.toLowerCase().indexOf(filter.query) > -1;
+    });
+  }
+
+  filtered_doctors.forEach((doc) => {
+    let doc_html = `
+                <div class="col-12 col-md-3">
+                 <div class="doctor__card">
+                <a href="${doc.url}">
+                <div class="doctor__photo" style="background-image:url('${doc.photo_url}')"></div> 
+        
+                  <div class="doctor__info">
+                      <div class="doctor__header">
+                        <strong>${doc.name}</strong>
+                        <p> ${doc.position}</p> 
+                      </div> 
+                    </div>  
+                  </a>       
+            </div> 
+            </div>
+    `;
+    all_html = all_html + doc_html;
+  });
+  console.log(all_html);
+  $("#doctors").html(all_html);
+}
+
+filterDoctors();
+
 
 

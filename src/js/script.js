@@ -1,15 +1,15 @@
 let slider = $(document).ready(function () {
-  $('.hero__slider').slick({
+  $(".hero__slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    infinite: true
+    infinite: true,
   });
 });
 
 let slider_logo = $(document).ready(function () {
-  $('.partners__slider').slick({
+  $(".partners__slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
@@ -19,77 +19,91 @@ let slider_logo = $(document).ready(function () {
     focusOnSelect: true,
     autoplay: true,
     centerMode: true,
-    autoplaySpeed: 3500
-
+    autoplaySpeed: 3500,
   });
 });
 
 let slider_team = $(document).ready(function () {
-  $('.team__slider').slick({
+  $(".team__slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
     centerMode: true,
     arrows: false,
     variableWidth: true,
-    infinite: true
+    infinite: true,
   });
 });
-
 
 $(document).ready(function () {
-  $('.header__burger').click(function (event) {
-    $('.header__burger, .dropdown_menu, .header').toggleClass('toggled');
+  $(".header__burger").click(function (event) {
+    $(".header__burger, .dropdown_menu, .header").toggleClass("toggled");
   });
 });
 
-
 if ($(window).width() < 998) {
-  $('.first_level_1').click(function () {
-    $('.sub1').toggleClass('clicked');
+  $(".first_level_1").click(function () {
+    $(".sub1").toggleClass("clicked");
   });
-  $('.first_level_2').click(function () {
-    $('.sub2').toggleClass('clicked');
+  $(".first_level_2").click(function () {
+    $(".sub2").toggleClass("clicked");
   });
-  $('.first_level_3').click(function () {
-    $('.sub3').toggleClass('clicked');
+  $(".first_level_3").click(function () {
+    $(".sub3").toggleClass("clicked");
   });
-  $('.first_level_4').click(function () {
-    $('.sub4').toggleClass('clicked');
+  $(".first_level_4").click(function () {
+    $(".sub4").toggleClass("clicked");
   });
-  $('.first_level_5').click(function () {
-    $('.sub5').toggleClass('clicked');
+  $(".first_level_5").click(function () {
+    $(".sub5").toggleClass("clicked");
   });
-  $('.first_level_6').click(function () {
-    $('.sub6').toggleClass('clicked');
+  $(".first_level_6").click(function () {
+    $(".sub6").toggleClass("clicked");
   });
 }
 
 // доктор фільтр
 let all_doctors = [
   {
-    name: "Іван Франко",
+    name: "Мицько Мар’яна",
+    position: "Лікар-невропатолог",
     department: 0,
     department_name: "Хірургія",
-    photo_url:
-      "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg",
-    declaration: true
+
+    photo_url: "../img/likar1.png",
+    declaration: true,
   },
-  
+
   {
-    name: "Тарас Шевчеенко",
+    name: "Саковець  Оксана",
+    position: "Лікар-гастроентероло",
     department: 1,
     department_name: "Травматологоія",
-    photo_url:
-      "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg",
-    declaration: false
-  }
+    photo_url: "../img/likar3.png",
+    declaration: false,
+  },
+  {
+    name: "Проценко Олексій",
+    position: "Лікар-уролог",
+    department: 1,
+    department_name: "Хірургія",
+    photo_url: "../img/likar2.png",
+    declaration: false,
+  },
+  {
+    name: "Ігорко",
+    position: "Сексолог-гинеколог",
+    department: 0,
+    department_name: "Травматологоія",
+    photo_url: "../img/doc5.png",
+    declaration: true,
+  },
 ];
 
 let filter = {
-  department: null,
+  department: -1,
   can_declarate: false,
-  query: ""
+  query: "",
 };
 filterDoctors();
 // 1 фільтруємо відділення
@@ -167,6 +181,3 @@ function filterDoctors() {
 }
 
 filterDoctors();
-
-
-

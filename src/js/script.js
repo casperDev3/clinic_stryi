@@ -68,5 +68,24 @@ $(window).on('resize', function () {
 });
 
 
-
+$(document).ready(function() {
+ 
+  $(".header__main_menu li a").hoverIntent(mousein_triger , mouseout_triger);
+   
+  });
+   
+  // expand the height of the container
+   
+  function mousein_triger(){
+  $(this).animate({"height": 200}, 300);
+   
+  }
+   
+  // reset the height of the container
+   
+  function mouseout_triger() {
+   
+  $(this).animate({"height": 0}, 300);
+   
+  }
 

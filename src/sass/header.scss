@@ -184,7 +184,7 @@ $height_header: 60px;
         li {
             cursor: pointer;
             @media screen and (min-width: 998px) {
-                &:hover {
+                &:hoverIntent {
                     a {
                         background: rgb(75, 220, 170);
                         color: #fff;
